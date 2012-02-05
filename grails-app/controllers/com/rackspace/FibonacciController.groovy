@@ -3,6 +3,7 @@ package com.rackspace
 class FibonacciController {
 
     def index = {
-        render "Hello World"    
+        def fibonacciService = new FibonacciService()
+        render fibonacciService.doFibonacci(17)    
     }
 }
