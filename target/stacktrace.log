@@ -1586,6 +1586,7 @@ Possible solutions: every(), every(groovy.lang.Closure), every(groovy.lang.Closu
 	at com.rackspace.FibonacciController$_closure2.doCall(FibonacciController.groovy:10)
 	at com.rackspace.FibonacciController$_closure2.doCall(FibonacciController.groovy)
 	at java.lang.Thread.run(Thread.java:722)
+<<<<<<< HEAD
 2012-02-05 10:27:39,478 [main] ERROR StackTrace  - Sanitizing stacktrace:
 LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use: JVM_Bind<null>:8080
 	at org.apache.catalina.connector.Connector.initialize(Connector.java:1059)
@@ -5119,3 +5120,5 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at gant.Gant.invokeMethod(Gant.groovy)
 	at gant.Gant.executeTargets(Gant.groovy:590)
 	at gant.Gant.executeTargets(Gant.groovy:589)
+=======
+>>>>>>> fibonacci_controller

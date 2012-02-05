@@ -13,14 +13,13 @@ class FibonacciService {
      * 
      * @return A string of the sequence, in 10-element rows
      */
-    def doFibonnacci(def iterations) {
+    def doFibonacci(def iterations) {
         def ret = ""
-        iterations = iterations - 2
         ret += "${lastTwoNumbers[0]} "
         ret += "${lastTwoNumbers[1]} "
-        for(def i in 0..iterations) {
-            if(i % 11 == 0) {
-                ret += "\n"
+        for(def i in 2..iterations) {
+            if(i % 10 == 0) {
+                ret += "<br />"
             }
             lastTwoNumbers[i % 2] = lastTwoNumbers[0] + lastTwoNumbers[1]
             ret += "${lastTwoNumbers[i % 2]} "

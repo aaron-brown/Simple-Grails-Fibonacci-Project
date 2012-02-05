@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="1" failures="0" hostname="Pooky7-2" id="0" name="FibonnacciServiceTests" package="com.rackspace" tests="1" time="0.109" timestamp="2012-02-04T04:00:15">
+      <properties />
+
+      <testcase classname="com.rackspace.FibonnacciServiceTests" name="initializationError" time="0.088">
+          <error message="No runnable methods" type="java.lang.Exception">java.lang.Exception: No runnable methods
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from initializationError--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from initializationError--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
