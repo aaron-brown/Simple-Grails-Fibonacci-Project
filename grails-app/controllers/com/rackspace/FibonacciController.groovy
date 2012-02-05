@@ -1,17 +1,20 @@
 package com.rackspace
 
-class FibonacciController {
+import com.sun.org.apache.xpath.internal.operations.String;
 
+class FibonacciController {
+    
     def index = {
     
     }
     
     def results = {
+        def fibonacciService = new FibonacciService()
         def iterations = 10
-        if(params.containsKey("iterations")) {
-            render "Key contained<br />"
-            iterations = params["iterations"]
-        }
-        render "Iterations: ${iterations}"
+        
+        if(params.containsKey("iterations") && params["iterations"] != "")
+            iterations = Integer.parseInt(params["iterations"])
+            
+        [result : fibonacciService.doFibonacci(iterations)]
     }
 }
